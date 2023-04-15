@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="module2labb.MainPage">
+    <StackLayout BackgroundColor="Black">
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label
+                Text="When can I legally buy alcohol?"
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontSize="36"/>
+        </Frame>
+        
+        <StackLayout Padding="15,20">
+            <Label
+                Text="Select your birthday"
+                FontSize="Medium"
+                TextColor="White"
+                FontAttributes="Bold"
+                />
+            <DatePicker
+                FontSize="Body"
+                TextColor="White"
+                Format="D"
+                DateSelected="DateSelected"
+                />
+        </StackLayout>
+
+        <!--<Button
+            Text="Calculate"
+            HorizontalOptions="Center"
+            BackgroundColor="DarkSlateBlue"
+            TextColor="White"
+            Clicked="OnButtonClicked"/>-->
+
+        <StackLayout Padding="0,100">
+            <Label
+                Text="You can buy alcohol in"
+                FontSize="Title"
+                HorizontalTextAlignment="Center"
+                TextColor="White"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label
+                    x:Name="NumOfYears"
+                    Text="" FontSize="Header"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    TextColor="White"/>
+
+                <Label
+                    Text="year (s)"
+                    FontSize="Large"
+                    VerticalTextAlignment="End"
+                    FontAttributes="Bold"
+                    Padding="10,0,0,30"
+                    TextColor="White"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+
